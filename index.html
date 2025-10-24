@@ -13,6 +13,8 @@
       direction: rtl;
       text-align: center;
     }
+
+    /* ===== الهيدر ===== */
     header {
       background-color: #fff;
       padding: 10px 20px;
@@ -20,6 +22,9 @@
       justify-content: space-between;
       align-items: center;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     header img {
       width: 50px;
@@ -31,6 +36,11 @@
       color: #333;
       font-weight: bold;
     }
+    nav a:hover {
+      color: #f0a500;
+    }
+
+    /* ===== Hero Image ===== */
     .hero {
       width: 100%;
       height: 400px;
@@ -39,6 +49,8 @@
       background-position: center;
       margin-top: 20px;
     }
+
+    /* ===== أقسام الهوديز والبناطيل ===== */
     .category {
       margin: 40px 0;
     }
@@ -51,13 +63,25 @@
     }
     .category img:hover {
       transform: scale(1.05);
+      cursor: pointer;
     }
     .category h2 {
       margin-top: 10px;
       font-size: 24px;
       color: #333;
     }
-    .about, .contact {
+
+    /* ===== عنّا ===== */
+    .about {
+      margin: 20px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* ===== التواصل معنا ===== */
+    .contact {
       margin: 20px;
       padding: 20px;
       background-color: #fff;
@@ -68,22 +92,29 @@
       text-decoration: none;
       color: #25D366;
       font-weight: bold;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
     }
+    .contact a img {
+      width: 40px;
+      height: 40px;
+    }
+
+    /* ===== Footer ===== */
     footer {
       background-color: #333;
       color: #fff;
       padding: 10px;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
       text-align: center;
     }
   </style>
 </head>
 <body>
 
+  <!-- ===== الهيدر ===== -->
   <header>
-    <img src="https://via.placeholder.com/50x50?text=Logo" alt="Logo">
+    <img src="https://github.com/drenyyy333/Drenyyy-Brand/raw/main/WhatsApp%20Image%202025-10-20%20at%2018.58.46_06135601.jpg" alt="Logo">
     <nav>
       <a href="#">الرئيسية</a>
       <a href="#">المنتجات</a>
@@ -91,43 +122,48 @@
     </nav>
   </header>
 
+  <!-- ===== Hero Image ===== -->
   <div class="hero"></div>
 
+  <!-- ===== قسم الهوديز ===== -->
   <section class="category" id="hoodies">
     <a href="all-hoodies.html">
-      <img src="https://via.placeholder.com/400x400?text=Hoodie" alt="Hoodies">
+      <img src="https://github.com/drenyyy333/Drenyyy-Brand/raw/main/WhatsApp%20Image%202025-10-24%20at%2014.27.23_4dd24bc9.jpg" alt="Hoodies">
       <h2>Hoodies</h2>
     </a>
   </section>
 
+  <!-- ===== قسم البناطيل ===== -->
   <section class="category" id="pants">
     <a href="all-pants.html">
-      <img src="https://via.placeholder.com/400x400?text=Pants" alt="Pants">
+      <img src="https://github.com/drenyyy333/Drenyyy-Brand/raw/main/WhatsApp%20Image%202025-10-24%20at%2015.43.01_32714200.jpg" alt="Pants">
       <h2>Pants</h2>
     </a>
   </section>
 
+  <!-- ===== عنّا ===== -->
   <section class="about">
     <h2>عنّا</h2>
     <p>براند مصري صغير يسعى لتقديم أفضل التصاميم والمنتجات لعملائنا الكرام.</p>
   </section>
 
+  <!-- ===== تواصل معنا ===== -->
   <section class="contact">
     <h2>تواصل معنا</h2>
-    <p>للتواصل معنا، اضغط على أيقونة الواتساب أدناه:</p>
+    <p>للتواصل معنا عبر الواتساب، اضغط على الأيقونة التالية:</p>
     <a href="https://wa.me/201026009257" target="_blank">
-      <img src="https://github.com/drenyyy333/Drenyyy-Brand/raw/main/WhatsApp%20Image%202025-10-24%20at%2005.14.20_7470726c.jpg" alt="WhatsApp" style="width: 50px; height: 50px; vertical-align: middle;">
+      <img src="https://github.com/drenyyy333/Drenyyy-Brand/raw/main/WhatsApp%20Image%202025-10-24%20at%2005.14.20_7470726c.jpg" alt="WhatsApp">
       <span>تواصل عبر الواتساب</span>
     </a>
   </section>
 
+  <!-- ===== Footer ===== -->
   <footer>
     <p>&copy; 2025 براند دريني. جميع الحقوق محفوظة.</p>
   </footer>
 
 </body>
 </html>
-
 
 
 
