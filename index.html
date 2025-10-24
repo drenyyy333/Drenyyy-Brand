@@ -1,125 +1,129 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dreny Brand | هودي براند</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دِريني - الصفحة الرئيسية</title>
+    <style>
+        /* ===== الهيدر ===== */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+        header {
+            background-color: #111;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 15px;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #f0a500;
+        }
 
-  <style>
-    /* ألوان أساسية */
-    :root {
-      --color-bg: #000000;
-      --color-text-main: #f3f3f3;
-      --color-primary: #c19351;
-      --color-button-text: #ffffff;
-      --color-button-bg: var(--color-primary);
-      --color-button-hover: #a87f44;
-    }
+        /* ===== الصورة الأساسية ===== */
+        .hero-image {
+            width: 100%;
+            max-width: 1200px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .hero-image:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
 
-    body {
-      background: linear-gradient(180deg, #000000 0%, #0b0b0b 40%, #121212 100%);
-      color: var(--color-text-main);
-      font-family: "Cairo", sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+        /* ===== قسم المنتجات ===== */
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+        .product-card {
+            width: 250px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+        .product-card h3 {
+            margin: 10px 0;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
 
-    header {
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-    }
-    header nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: var(--color-text-main);
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-    header nav a:hover {
-      color: var(--color-primary);
-    }
-
-    /* لوجو */
-    .logo-section {
-      text-align: center;
-      margin: 70px 0;
-    }
-    .logo-section img {
-      width: 200px;
-      max-width: 80%;
-      border-radius: 10px;
-      box-shadow: 0 0 25px rgba(245,166,35,0.25);
-    }
-    .logo-section p {
-      color: #f5a623;
-      font-size: 16px;
-      margin-top: 10px;
-    }
-
-    /* زر مميز */
-    .btn-primary {
-      background-color: var(--color-button-bg);
-      color: var(--color-button-text);
-      padding: 12px 30px;
-      border: none;
-      border-radius: 6px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    .btn-primary:hover {
-      background-color: var(--color-button-hover);
-    }
-
-</style>
-  
-  </style>
+        /* ===== Footer ===== */
+        footer {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
 </head>
-
 <body>
 
-  <!-- Header -->
-  <header>
-    <h1>Dreny Brand </h1>
-    <nav>
-      <a href="#home">الرئيسية</a>
-      <a href="#products">المتجر</a>
-      <a href="#about">عنّا</a>
-      <a href="#contact">تواصل</a>
-    </nav>
-  </header>
+    <!-- ===== الهيدر ===== -->
+    <header>
+        <div class="logo">
+            <a href="index.html">دِريني</a>
+        </div>
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="all-hoodies.html">الهوديز</a>
+            <a href="#">اتصل بنا</a>
+        </nav>
+    </header>
 
-  <!-- لوجو -->
-  <section class="logo-section fade-in">
-    <img src="WhatsApp%20Image%202025-10-20%20at%2018.58.46_06135601.jpg" alt="Dreny Brand Logo">
-    <p>Premium Winter Wear</p>
-  </section>
+    <!-- ===== الصورة الأساسية ===== -->
+    <a href="all-hoodies.html">
+        <img src="https://github.com/drenyyy333/Drenyyy-Brand/raw/main/WhatsApp%20Image%202025-10-24%20at%2014.27.22_aca83183.jpg" 
+             alt="دِريني هوديز" 
+             class="hero-image"
+             loading="lazy">
+    </a>
 
-  <!-- منتجات -->
-  <section class="product-grid" id="products">
-    <div class="product fade-in">
-      <img src="https://github.com/drenyyy333/Drenyyy-Brand/blob/main/WhatsApp%20Image%202025-10-24%20at%2014.27.22_aca83183.jpg" altهودي 1">
-      <h3>هودي كلاسيك</h3>
-      <p>السعر: 550 جنيه</p>
-      <button class="btn-primary">اشتري الآن</button>
-    </div>
-    <div class="product fade-in">
-      <img src="hoodie2.jpg" alt="هودي 2">
-      <h3>هودي دافئ</h3>
-      <p>السعر: 600 جنيه</p>
-      <button class="btn-primary">اشتري الآن</button>
-    </div>
-    <div class="product fade-in">
-      <img src="https://github.com/drenyyy333/Drenyyy-Brand/blob/main/WhatsApp%20Image%202025-10-24%20at%2014.27.22_aca83183.jpg" alt="هودي 3">
-      <h3>هودي شبابي</h3>
-      <p>السعر: 550 جنيه</p>
-      <button class="btn-primary">اشتري الآن</button>
-    </div>
-  </section>
+    <!-- ===== قسم المنتجات كمثال ===== -->
+    <section class="products">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/250x300?text=هودي+1" alt="هودي 1">
+            <h3>هودي </h3>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/250x300?text=هودي+2" alt="هودي 2">
+            <h3>هودي </h3>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/250x300?text=هودي+3" alt="هودي 3">
+            <h3>هودي</h3>
+        </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        &copy; 2025 دِريني. جميع الحقوق محفوظة.
+    </footer>
 
 </body>
 </html>
@@ -157,6 +161,7 @@
 
 </body>
 </html>
+
 
 
 
