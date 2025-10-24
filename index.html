@@ -1,24 +1,141 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <style>
-    body {
-      background: linear-gradient(180deg, #000000 0%, #0b0b0b 40%, #121212 100%);
-      color: #f3f3f3;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-  </style>
-</head>
-
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>هودي براند | Hodies Brand</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Dreny Brand | هودي براند</title>
+
+  <style>
+    /* ألوان أساسية */
+    :root {
+      --color-bg: #000000;
+      --color-text-main: #f3f3f3;
+      --color-primary: #c19351;
+      --color-button-text: #ffffff;
+      --color-button-bg: var(--color-primary);
+      --color-button-hover: #a87f44;
+    }
+
+    body {
+      background: linear-gradient(180deg, #000000 0%, #0b0b0b 40%, #121212 100%);
+      color: var(--color-text-main);
+      font-family: "Cairo", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    header nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: var(--color-text-main);
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    header nav a:hover {
+      color: var(--color-primary);
+    }
+
+    /* لوجو */
+    .logo-section {
+      text-align: center;
+      margin: 70px 0;
+    }
+    .logo-section img {
+      width: 200px;
+      max-width: 80%;
+      border-radius: 10px;
+      box-shadow: 0 0 25px rgba(245,166,35,0.25);
+    }
+    .logo-section p {
+      color: #f5a623;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    /* زر مميز */
+    .btn-primary {
+      background-color: var(--color-button-bg);
+      color: var(--color-button-text);
+      padding: 12px 30px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: var(--color-button-hover);
+    }
+
+    /* تصميم المنتجات */
+    .product-grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      padding: 20px;
+    }
+
+    .product {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+    }
+    .product h3 {
+      font-size: 18px;
+      margin: 10px 0 5px;
+    }
+    .product p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    a {
+      color: var(--color-text-main);
+      text-decoration: none;
+    }
+    a:hover {
+      color: var(--color-primary);
+    }
+
+    /* تأثير Fade-in */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* تأخير متتابع للمنتجات */
+    .product:nth-child(1) { animation-delay: 0.2s; }
+    .product:nth-child(2) { animation-delay: 0.4s; }
+    .product:nth-child(3) { animation-delay: 0.6s; }
+  </style>
 </head>
+
 <body>
 
   <!-- Header -->
@@ -32,111 +149,36 @@
     </nav>
   </header>
 
-  <section style="text-align:center; margin:70px 0;">
-  <img src="WhatsApp%20Image%202025-10-20%20at%2018.58.46_06135601.jpg" alt="Dreny Brand Logo" style="width:200px; max-width:80%; border-radius:10px; box-shadow:0 0 25px rgba(245,166,35,0.25);">
-  <p style="color:#f5a623; font-size:16px; margin-top:10px;">Premium Winter Wear</p>
-</section>
-/* ألوان أساسية */
-:root {
-  --color-bg: #ffffff;
-  --color-text-main: #333333;
-  --color-primary: #c19351; /* اللون الذهبي الدافئ */
-  --color-button-text: #ffffff;
-  --color-button-bg: var(--color-primary);
-  --color-button-hover: #a87f44;
-}
+  <!-- لوجو -->
+  <section class="logo-section fade-in">
+    <img src="WhatsApp%20Image%202025-10-20%20at%2018.58.46_06135601.jpg" alt="Dreny Brand Logo">
+    <p>Premium Winter Wear</p>
+  </section>
 
-/* تنسيق عام */
-body {
-  background-color: var(--color-bg);
-  color: var(--color-text-main);
-  font-family: "Cairo", sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* زر مميز */
-.btn-primary {
-  background-color: var(--color-button-bg);
-  color: var(--color-button-text);
-  padding: 12px 30px;
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.btn-primary:hover {
-  background-color: var(--color-button-hover);
-}
-
-/* التصميم الشبكي للمنتجات */
-.product-grid {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  /* يوزع العناصر بشكل responsive */
-}
-
-/* بطاقة منتج */
-.product {
-  background: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: center;
-}
-.product img {
-  width: 100%;
-  height: auto;
-}
-.product h3 {
-  font-size: 18px;
-  margin: 10px 0 5px;
-}
-.product p {
-  font-size: 14px;
-  color: #666;
-}
-
-/* رابط hover */
-a {
-  color: var(--color-text-main);
-  text-decoration: none;
-}
-a:hover {
-  color: var(--color-primary);
-}
-
-  <!-- Products -->
-  <section id="products" class="products">
-    <h2>منتجاتنا</h2>
-    <div class="product-grid">
-      <div class="product">
-        <img src="hoodie1.jpg" alt="هودي أسود">
-        <h3>هودي أسود كلاسيك</h3>
-        <p>قطن 100% - خامة تقيلة ومريحة</p>
-        <span class="price">550 جنيه</span>
-        <button>أضف إلى السلة</button>
-      </div>
-
-      <div class="product">
-        <img src="hoodie2.jpg" alt="هودي رمادي">
-        <h3>هودي رمادي رياضي</h3>
-        <p>ستايل عصري ودفا مضمون</p>
-        <span class="price">600 جنيه</span>
-        <button>أضف إلى السلة</button>
-      </div>
-
-      <div class="product">
-        <img src="hoodie3.jpg" alt="هودي بيج">
-        <h3>هودي بيج أوفر سايز</h3>
-        <p>مناسب لكل الإطلالات الشتوية</p>
-        <span class="price">580 جنيه</span>
-        <button>أضف إلى السلة</button>
-      </div>
+  <!-- منتجات -->
+  <section class="product-grid" id="products">
+    <div class="product fade-in">
+      <img src="hoodie1.jpg" alt="هودي 1">
+      <h3>هودي كلاسيك</h3>
+      <p>السعر: 550 جنيه</p>
+      <button class="btn-primary">اشتري الآن</button>
+    </div>
+    <div class="product fade-in">
+      <img src="hoodie2.jpg" alt="هودي 2">
+      <h3>هودي دافئ</h3>
+      <p>السعر: 600 جنيه</p>
+      <button class="btn-primary">اشتري الآن</button>
+    </div>
+    <div class="product fade-in">
+      <img src="hoodie3.jpg" alt="هودي 3">
+      <h3>هودي شبابي</h3>
+      <p>السعر: 550 جنيه</p>
+      <button class="btn-primary">اشتري الآن</button>
     </div>
   </section>
+
+</body>
+</html>
 
   <!-- About -->
   <section id="about" class="about">
@@ -158,6 +200,7 @@ a:hover {
 
 </body>
 </html>
+
 
 
 
