@@ -1,177 +1,133 @@
-<!DOCTYPE html> 
-<head>
-    <meta charset="UTF-8">
-    <title>كل الهوديز</title>
-</head>
-<body>
-    <h1>قريبا سيتم عرض كل الهوديز هنا!</h1>
-    <a href="index.html">العودة للصفحة الرئيسية</a>
-</body>
-</html>
-
+<!DOCTYPE html>
 <html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>دِريني هودى - الصفحة الرئيسية</title>
-    <style>
-        /* ===== الهيدر ===== */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #fff;
-            color: #333;
-        }
-        header {
-            background-color: #111;
-            color: #fff;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            margin-left: 15px;
-            font-weight: bold;
-        }
-        header a:hover {
-            color: #f0a500;
-        }
-
-        /* ===== الصورة الأساسية ===== */
-        .hero-image {
-            width: 100%;
-            max-width: 1200px;
-            height: auto;
-            display: block;
-            margin: 20px auto;
-            border-radius: 10px;
-            transition: transform 0.3s;
-        }
-        .hero-image:hover {
-            transform: scale(1.05);
-            cursor: pointer;
-        }
-
-        /* ===== قسم المنتجات ===== */
-        .products {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 40px 20px;
-        }
-        .product-card {
-            width: 250px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            overflow: hidden;
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .product-card img {
-            width: 100%;
-            height: auto;
-        }
-        .product-card h3 {
-            margin: 10px 0;
-        }
-        .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-
-        /* ===== Footer ===== */
-        footer {
-            background-color: #111;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>براند دريني</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      direction: rtl;
+      text-align: center;
+    }
+    header {
+      background-color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    header img {
+      width: 50px;
+      height: auto;
+    }
+    nav a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .hero {
+      width: 100%;
+      height: 400px;
+      background-image: url('https://via.placeholder.com/1200x400?text=Hero+Image');
+      background-size: cover;
+      background-position: center;
+      margin-top: 20px;
+    }
+    .category {
+      margin: 40px 0;
+    }
+    .category img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .category img:hover {
+      transform: scale(1.05);
+    }
+    .category h2 {
+      margin-top: 10px;
+      font-size: 24px;
+      color: #333;
+    }
+    .about, .contact {
+      margin: 20px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .contact a {
+      text-decoration: none;
+      color: #25D366;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
 
-    <!-- ===== الهيدر ===== -->
-    <header>
-        <div class="logo">
-            <a href="index.html">دِريني</a>
-        </div>
-        <nav>
-            <a href="index.html">الرئيسية</a>
-            <a href="all-hoodies.html">الهوديز</a>
-            <a href="#">اتصل بنا</a> <a href="tel:‪+201026009257‬">اتصل بنا</a>
-        </nav>
-    </header>
+  <header>
+    <img src="https://via.placeholder.com/50x50?text=Logo" alt="Logo">
+    <nav>
+      <a href="#">الرئيسية</a>
+      <a href="#">المنتجات</a>
+      <a href="tel:‪+201026009257‬">اتصل بنا</a>
+    </nav>
+  </header>
 
-    <!-- ===== الصورة الأساسية ===== -->
+  <div class="hero"></div>
+
+  <section class="category" id="hoodies">
     <a href="all-hoodies.html">
-        <img src="https://github.com/drenyyy333/Drenyyy-Brand/raw/main/WhatsApp%20Image%202025-10-24%20at%2014.27.22_aca83183.jpg" 
-             alt="دِريني هوديز" 
-             class="hero-image"
-             loading="lazy">
+      <img src="https://via.placeholder.com/400x400?text=Hoodie" alt="Hoodies">
+      <h2>Hoodies</h2>
     </a>
-
-    <!-- ===== قسم المنتجات كمثال ===== -->
-    <section class="products">
-        <div class="product-card">
-            <img src="https://via.placeholder.com/250x300?text=هودي+1" alt="هودي 1">
-            <h3>هودي </h3>
-        </div>
-        <div class="product-card">
-            <img src="https://via.placeholder.com/250x300?text=هودي+2" alt="هودي 2">
-            <h3>هودي </h3>
-        </div>
-        <div class="product-card">
-            <img src="https://via.placeholder.com/250x300?text=هودي+3" alt="هودي 3">
-            <h3>هودي</h3>
-        </div>
-    </section>
-
-    <!-- ===== Footer ===== -->
-    <footer>
-        &copy; 2025 دِريني. جميع الحقوق محفوظة.
-    </footer>
-
-</body>
-</html>
-
-  <!-- About -->
-  <section id="about" class="about">
-    <h2>عن البراند</h2>
-    <p>إحنا براند مصري متخصص في الهوديز واللبس الشتوي الفخم. خاماتنا عالية الجودة، ومصممة علشان تديك راحة وأناقة طول الشتاء.</p>
   </section>
 
-  <!-- Contact -->
-<a href="tel:‪+201026009257‬">اتصل بنا</a>
-  <section id="contact" class="contact">
+  <section class="category" id="pants">
+    <a href="all-pants.html">
+      <img src="https://via.placeholder.com/400x400?text=Pants" alt="Pants">
+      <h2>Pants</h2>
+    </a>
+  </section>
+
+  <section class="about">
+    <h2>عنّا</h2>
+    <p>براند مصري صغير يسعى لتقديم أفضل التصاميم والمنتجات لعملائنا الكرام.</p>
+  </section>
+
+  <section class="contact">
     <h2>تواصل معنا</h2>
-    <p>📞 01026009257</p>
-    <p>📸 تابعنا على <a href="#">Instagram</a></p>
+    <p>للتواصل معنا، اضغط على أيقونة الواتساب أدناه:</p>
+    <a href="https://wa.me/201026009257" target="_blank">
+      <img src="https://github.com/drenyyy333/Drenyyy-Brand/raw/main/WhatsApp%20Image%202025-10-24%20at%2005.14.20_7470726c.jpg" alt="WhatsApp" style="width: 50px; height: 50px; vertical-align: middle;">
+      <span>تواصل عبر الواتساب</span>
+    </a>
   </section>
-<!-- زر واتساب ثابت بأيقونة -->
-<a href="https://wa.me/201026009257" target="_blank" style="
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-">
-  <img src="https://raw.githubusercontent.com/drenyyy333/Drenyyy-Brand/main/WhatsApp%20Image%202025-10-24%20at%2005.14.20_7470726c.jpg" alt="WhatsApp" style="width:100%; height:100%; border-radius: 50%; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
-</a>
-  <!-- Footer -->
+
   <footer>
-    <p>© 2025  هودي براند | كل الحقوق محفوظة</p>
+    <p>&copy; 2025 براند دريني. جميع الحقوق محفوظة.</p>
   </footer>
 
 </body>
 </html>
+
 
 
 
