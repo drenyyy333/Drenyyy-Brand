@@ -74,12 +74,31 @@
     .btn-primary:hover {
       background-color: var(--color-button-hover);
     }
-<a href="products.html"> <!-- ضع هنا رابط صفحة المنتجات -->
+<!-- الصورة الأساسية للهووديز -->
+<a href="all-hoodies.html"> <!-- ضع هنا رابط صفحة كل الهوديز -->
   <img src="https://github.com/drenyyy333/Drenyyy-Brand/raw/main/WhatsApp%20Image%202025-10-24%20at%2014.27.22_aca83183.jpg" 
-       alt="دِريني هودي" 
-       style="width:100%; max-width:1200px; height:auto; display:block; margin:0 auto;"
+       alt="دِريني هوديز" 
+       class="hero-image"
        loading="lazy">
 </a>
+
+<!-- CSS -->
+<style>
+.hero-image {
+  width: 100%;           /* الصورة تمتد بعرض الصفحة */
+  max-width: 1200px;     /* الحد الأقصى للعرض */
+  height: auto;           /* يحافظ على نسبة الصورة */
+  display: block;        /* لإزالة الفراغات أسفل الصورة */
+  margin: 20px auto;     /* توسيط الصورة مع مسافة من الأعلى والأسفل */
+  border-radius: 10px;   /* اختياري: حواف دائرية خفيفة */
+  transition: transform 0.3s; /* تأثير عند المرور بالماوس */
+}
+
+.hero-image:hover {
+  transform: scale(1.05); /* تكبير خفيف عند المرور */
+  cursor: pointer;        /* مؤشر على أن الصورة قابلة للنقر */
+}
+</style>
     /* تصميم المنتجات */
     .product-grid {
       display: grid;
@@ -218,6 +237,7 @@
 
 </body>
 </html>
+
 
 
 
