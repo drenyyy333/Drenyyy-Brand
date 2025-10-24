@@ -1,75 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dreny Brand</title>
-<style>
-  body { font-family: Arial, sans-serif; margin:0; padding:0; }
-  header { display:flex; justify-content:space-between; align-items:center; padding:10px 20px; background:#f5f5f5; }
-  header img { height:50px; }
-  header nav a { margin-left:20px; text-decoration:none; color:#333; font-weight:bold; }
-  .big-logo { text-align:center; margin:20px 0; }
-  .big-logo img { width:400px; } /* اللوجو الكبير */
-  .hero { width:100%; height:300px; background:#ccc; text-align:center; line-height:300px; font-size:30px; color:#fff; }
-  .category { text-align:center; margin:40px 0; }
-  .category img { width:300px; height:300px; object-fit:cover; }
-  .category h2 { margin-top:10px; font-size:24px; }
-  .about, .contact { padding:20px; text-align:center; background:#f5f5f5; margin:20px 0; }
-  .contact img { width:50px; vertical-align:middle; margin-right:10px; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>براند دريني</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      direction: rtl;
+      text-align: center;
+    }
+    header {
+      background-color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    header img {
+      width: 50px;
+      height: auto;
+    }
+    nav a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .hero {
+      width: 100%;
+      height: 400px;
+      background-image: url('https://via.placeholder.com/1200x400?text=Hero+Image');
+      background-size: cover;
+      background-position: center;
+      margin-top: 20px;
+    }
+    .category {
+      margin: 40px 0;
+    }
+    .category img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .category img:hover {
+      transform: scale(1.05);
+    }
+    .category h2 {
+      margin-top: 10px;
+      font-size: 24px;
+      color: #333;
+    }
+    .about, .contact {
+      margin: 20px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .contact a {
+      text-decoration: none;
+      color: #25D366;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
 
-<!-- الهيدر -->
-<header>
-  <img src="https://github.com/drenyyy333/Drenyyy-Brand/blob/main/WhatsApp%20Image%202025-10-20%20at%2018.58.46_06135601.jpg" alt="Logo">
-  <nav>
-    <a href="#home">الرئيسية</a>
-    <a href="#products">المنتجات</a>
-    <a href="tel:201026009257">اتصل بنا</a>
-  </nav>
-</header>
+  <header>
+    <img src="https://via.placeholder.com/50x50?text=Logo" alt="Logo">
+    <nav>
+      <a href="#">الرئيسية</a>
+      <a href="#">المنتجات</a>
+      <a href="tel:‪+201026009257‬">اتصل بنا</a>
+    </nav>
+  </header>
 
-<!-- اللوجو الكبير -->
-<div class="big-logo">
-  <img src="https://raw.githubusercontent.com/drenyyy333/Drenyyy-Brand/main/WhatsApp%20Image%202025-10-20%20at%2018.58.46_06135601.jpg" alt="Dreny Brand">
-</div>
+  <div class="hero"></div>
 
-<!-- الهيرو ايميدج -->
-<div class="hero">Hero Image</div>
-
-<!-- قسم الهوديز -->
-<section class="category" id="hoodies">
-  <a href="all-hoodies.html"><img src=https://raw.githubusercontent.com/drenyyy333/Drenyyy-Brand/main/WhatsApp%20Image%202025-10-24%20at%2014.27.23_4dd24bc9.jpg" alt="Hoodies">
-    <h2>Hoodies</h2>
-  </a>
-</section>
-
-<!-- قسم البناطيل -->
-<section class="category" id="pants">
-  <a href="all-pants.html">
-    <img src="https://raw.githubusercontent.com/drenyyy333/Drenyyy-Brand/main/WhatsApp%20Image%202025-10-24%20at%2015.43.01_32714200.jpg" alt="Pants">
-    <h2>Pants</h2>
-  </a>
-</section>
-
-<!-- عنّا -->
-<section class="about">
-  <h2>عنّا</h2>
-  <p>Dreny Brand هو براند مصري متخصص في الملابس المميزة والعصرية.</p>
-</section>
-
-<!-- تواصل معنا -->
-<section class="contact">
-  <h2>تواصل معنا</h2>
-  <p>
-    <a href="https://wa.me/201026009257" target="_blank">
-      <img src="https://raw.githubusercontent.com/drenyyy333/Drenyyy-Brand/main/WhatsApp%20Image%202025-10-24%20at%2005.14.20_7470726c.jpg" alt="WhatsApp"> اتصل عبر واتساب
+  <section class="category" id="hoodies">
+    <a href="all-hoodies.html">
+      <img src="https://via.placeholder.com/400x400?text=Hoodie" alt="Hoodies">
+      <h2>Hoodies</h2>
     </a>
-  </p>
-  <p>أو اتصل مباشرة على: 201026009257</p>
-</section>
+  </section>
+
+  <section class="category" id="pants">
+    <a href="all-pants.html">
+      <img src="https://via.placeholder.com/400x400?text=Pants" alt="Pants">
+      <h2>Pants</h2>
+    </a>
+  </section>
+
+  <section class="about">
+    <h2>عنّا</h2>
+    <p>براند مصري صغير يسعى لتقديم أفضل التصاميم والمنتجات لعملائنا الكرام.</p>
+  </section>
+
+  <section class="contact">
+    <h2>تواصل معنا</h2>
+    <p>للتواصل معنا، اضغط على أيقونة الواتساب أدناه:</p>
+    <a href="https://wa.me/201026009257" target="_blank">
+      <img src="https://github.com/drenyyy333/Drenyyy-Brand/raw/main/WhatsApp%20Image%202025-10-24%20at%2005.14.20_7470726c.jpg" alt="WhatsApp" style="width: 50px; height: 50px; vertical-align: middle;">
+      <span>تواصل عبر الواتساب</span>
+    </a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 براند دريني. جميع الحقوق محفوظة.</p>
+  </footer>
 
 </body>
 </html>
